@@ -436,7 +436,7 @@ header.sm-container {
 }
 @media only screen and (max-width: 500px) {
   header.sm-container img {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
 }
@@ -492,6 +492,7 @@ header.sm-container {
   .citizen-adv-sec .grid-box {
     grid-template-columns: 1fr;
     row-gap: 4rem;
+    overflow: hidden;
   }
 }
 .citizen-adv-sec .grid-box div h3 {
@@ -542,6 +543,11 @@ header.sm-container {
 @media only screen and (max-width: 768px) {
   .home-loan-contaier .text-container {
     padding: 3rem 4.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-loan-contaier .text-container {
+    padding: 2.5rem;
   }
 }
 

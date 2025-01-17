@@ -19,13 +19,15 @@ body{color:#1F1F1F;font-family:"Roboto", sans-serif;}
  &::after{content: ""; position: absolute; width: 7.3rem; height: 2px; background-color:#00945f; bottom: 0; left: 50%;transform: translate(-50%);}
 }
 .heading02{font-size: 2.4rem; color: #00945f;}
-p{color: #888888;font-size: 1.8rem;line-height: 1.8;}
+p{color: #888888;font-size: 1.8rem;line-height: 1.8;
+    @media only screen and (max-width: 500px){line-height: 2;}
+}
 header.sm-container{margin-block: 4.4rem;
     @media only screen and (max-width: 1024px) {
         img{width: 30%;}
     }
     @media only screen and (max-width: 500px) {
-        img{width: 50%;margin: 0 auto;}
+        img{width: 60%;margin: 0 auto;}
     }
 }
 
@@ -45,29 +47,33 @@ header.sm-container{margin-block: 4.4rem;
 }
 .citizen-adv-sec .grid-box{display: grid; grid-template-columns: repeat(2 , 1fr);margin-top: 5rem;row-gap: 11.2rem;
     @media only screen and (max-width: 1024px){row-gap: 8.2rem;}
-    @media only screen and (max-width: 500px){grid-template-columns:1fr;row-gap:4rem; overflow: hidden;}
+    @media only screen and (max-width: 500px){grid-template-columns:1fr;row-gap:0; overflow: hidden;}
     div{
-        h3{margin-bottom: 1.8rem;}
+        h3{margin-bottom: 1.8rem;}       
         &:nth-child(odd){padding-right: 4rem; border-right: 1px solid #c0c0c0;
-            @media only screen and (max-width: 500px){padding: 0; border: none; border-bottom: 1px solid #c0c0c0;}
+            @media only screen and (max-width: 500px){padding: 0; border: none; border-bottom: 1px solid #c0c0c0; padding-block:2rem;}
         } &:nth-child(even){padding-left: 4rem;
-            @media only screen and (max-width: 500px){padding: 0; border: none; border-bottom: 1px solid #c0c0c0;}
+            @media only screen and (max-width: 500px){padding: 0; border: none; border-bottom: 1px solid #c0c0c0; padding-block:2rem;}
         }
         span{color: #759b24; &::after{content: '>'; font-size: 2rem;}}
     }
 }
 
 .home-loan-contaier{ margin-block: 6rem;
-    .heading02{color: #fff;background-color: #00945f; text-align: center;padding-block: 1.8rem;}
+    .heading02{color: #fff;background-color: #00945f; text-align: center;padding-block: 1.8rem; 
+        @media only screen and (max-width: 500px){line-height: 1.8;}
+    }
     .text-container{background-color: #ebf7f5; padding: 3rem 6.5rem;
         @media only screen and (max-width: 768px){padding: 3rem 4.5rem;}
+        @media only screen and (max-width: 500px){padding: 2.5rem;}
     }
 }
  
 .testimonial-section{ margin-bottom: 14rem;
     .grid-box{display: grid;grid-template-columns: 1fr 2fr 1fr;align-items: center;gap: 15rem;
         @media only screen and (max-width: 1024px){gap: 8rem;grid-template-columns: 1fr 1fr 1fr;}
-        @media only screen and (max-width: 1024px){gap: 6rem;grid-template-columns: 1fr;}
+        @media only screen and (max-width: 768px){gap: 6rem;grid-template-columns: 1fr;}
+        @media only screen and (max-width: 500px){width: 50%;}
         .testi-box{text-align: center; 
         .info{ position: relative; padding-bottom: 2rem;
             &::before{content: url("../images/colouns.png"); position: absolute;width: 10rem;height: 10rem;left: -2.2rem;}
